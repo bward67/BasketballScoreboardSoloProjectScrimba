@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Basketball Scoreboard Solo Project Scrimba</title>
+  </head>
+  <body>
+    <main class="container">
+      <div class="scoreboard">
+        <div class="home">
+          <h2>Home</h2>
+          <div class="score" id="score-h">0</div>
+          <div class="btn-container">
+            <button onclick="addOne()" class="btn btnAdd1">+1</button>
+            <button onclick="addTwo()" class="btn btnAdd2">+2</button>
+            <button onclick="addThree()" class="btn btnAdd3">+3</button>
+          </div>
+        </div>
+        <div class="guest">
+          <h2>Guest</h2>
+          <div class="score" id="score-g">0</div>
+          <div class="btn-container">
+            <button onclick="addOneG()" class="btn btnAdd1">+1</button>
+            <button onclick="addTwoG()" class="btn btnAdd2">+2</button>
+            <button onclick="addThreeG()" class="btn btnAdd3">+3</button>
+          </div>
+        </div>
+      </div>
+      <button onclick="newGame()" class="btn newgame-btn">New Game</button>
+    </main>
+  </body>
+  <script src="app.js"></script>
+</html>
